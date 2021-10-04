@@ -1,0 +1,206 @@
+.allproduct {
+    max-width: 1700px;
+    margin: auto;
+    padding: 40px;
+    background: #80808014;
+}
+/* ...................Filter....................... */
+.filter {
+    background: #ffffff57;
+    box-shadow: 5px 5px 10px #a3a1a1;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.filter a {
+    color: black;
+}
+.djequipment {
+    padding-bottom: 15px;
+}
+.price p {
+    margin: 0;
+}
+.ranger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ranger i.fas.fa-caret-up {
+    color: black;
+}
+.price_item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.price_item input {
+    margin-right: 10px;
+}
+i.far.fa-circle {
+    padding-right: 20px;
+}
+
+/* ..........................Product List............................... */
+
+.product-submenu {
+    display: none;
+    margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+    .product-submenu {
+        display: flex;
+    }
+    .filter {
+        display: none;
+    }
+}
+
+.dropdown-menu.show {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative !important;
+    padding: 20px;
+    transform: translate(0px, 0px) !important;
+}
+button#dropdownMenuButton1 {
+    margin-right: 20px;
+    padding: 10px;
+}
+.productlist {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div#productlist_item {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card {
+    margin-bottom: 40px;
+    margin-right: 25px;
+    position: relative;
+    width: 225px;
+    height: 330px;
+    background: #ffffff57;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #a3a1a1;
+}
+.product_background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 90%;
+    transition: 0.5s;
+    padding: 0 10px;
+    left: 10px;
+}
+.product-card:hover .product_background {
+    top: 0%;
+    transform: translateY(-50px) scale(0.8);
+    
+}
+.product-card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+    padding: 10px;
+}
+.product-card:hover .product-card-content {
+    height: 220px;
+}
+.product-card-content h5 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 20px;
+}
+.product-card-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+.product-card:hover .product-card-color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.product-card-color p {
+    color: black;
+    font-weight: 300;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.product-card:hover .product-card-content p {
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+    
+}
+.product-card-color span {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid;
+}
+.product-card-color .circle-white{
+    background: #fff
+}
+.product-card-color .circle-white.active{
+    box-shadow: 0 0 0 1px rgb(221, 221, 221), 0 0 0 2px #0071C7;
+    
+}
+.product-card-color .circle-black{
+    background: black
+}
+.product-card-color .circle-black.active{
+    box-shadow: 0 0 0 1px rgb(221, 221, 221), 0 0 0 2px #0071C7;
+}
+.product-card-price p {
+    margin: 10px;
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+.product-card:hover .product-card-price p {
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+.product-card-content a.btn-cart {
+    display: initial;
+    background: #d4d1d15e;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgb(136 135 135 / 20%);
+}
+.product-card:hover .product-card-content a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}

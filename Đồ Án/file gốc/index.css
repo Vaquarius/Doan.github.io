@@ -1,0 +1,310 @@
+body {
+    font-family: Roboto;
+    line-height: 19.2px;
+    margin: auto;
+    text-decoration: none;
+}
+/* đây là header */
+.header {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    max-width: 1700px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+a.headerlogo {
+    display: block;
+}
+img.header_logo {
+    padding: 20px 20px;
+}
+
+.main-menu {
+    width: 55%;
+}
+ul.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+li.menu-item {
+    padding-left: 60px;
+}
+
+.sup-menu {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a.menuNav__link {
+    text-decoration: none;
+    color: white;
+}
+a.search {
+    text-decoration: none;
+    color: white;
+}
+
+a.cart {
+    text-decoration: none;
+    color: white;
+    transform: translateY(1px);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+span.cart__batch {
+    position: absolute;
+    top: -4px;
+    left: 8px;
+    display: block;
+    color: white;
+    font-size: 14px;
+    line-height: 0;
+}
+
+hover {
+    text-decoration: underline;
+}
+
+/* đây là body */
+
+.banner {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.background-banner {
+    position: relative;
+}
+.background-banner img {
+    width: 100%;
+}
+
+.banner_content {
+    position: absolute;
+    color: white;
+    width: 36%;
+    left: 10%;
+    top: 25%;
+}
+
+.supbanner {
+    position: relative;
+    width: 70%;
+    background-color: #f0f0f0;
+    bottom: 90px;
+    display: flex;
+}
+.supbanner_item {
+    width: 100%;
+    padding: 15px;
+}
+.supbanner img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+/* Content */
+
+.main-content {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px 48px;
+}
+.content {
+    display: flex;
+    width: 100%;
+}
+.content img {
+    width: 100%;
+}
+.content-left {
+    width: 50%;
+    padding: 5px;
+}
+
+
+.content_item1 {
+    padding-bottom: 10px;
+}
+.content_item2 {
+    display: flex;
+}
+
+.product {
+    width: 70%;
+    padding-right: 10px;
+}
+.product_item1 {
+    display: flex;
+    justify-content: space-between;
+}
+.product_item1 a {
+    width: 49%;
+}
+.firmware_update {
+    width: 33%;
+    background-color: #f0f0f0;
+}
+.content-right {
+    width: 50%;
+    padding: 5px
+}
+
+.content_item3 {
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_item4 {
+    padding: 10px 0;
+}
+.masterclass {
+    width: 66%;
+}
+.product_item2 {
+    width: 33%;
+    padding-left: 10px;
+}
+
+.support {
+    background-color: #f0f0f0;
+    height: 48%;
+}
+
+                                                        /* news */
+
+.news {
+    padding: 40px 0;
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.news a {
+    color: black;
+}
+.new_content {
+    display: flex;
+    padding: 0px 40px;
+}
+
+.news_item {
+    width: 100%;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+.news_item img {
+    width: 100%;
+}
+.content_new {
+    padding: 0 10px;
+}
+/*................................. Brand ..........................................*/
+
+.brand {
+    max-width: 1700px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+img.brandbanner {
+    width: 100%;
+}
+
+img.brand_item {
+    width: 10%;
+}
+.brand_logo_item {
+    padding: 40px;
+}
+
+.brand_logo_item a {
+    padding: 40px;
+}
+/* ...............................Đây là footer.................................. */
+
+.footer {
+    background-color: black;
+    color: white;
+    max-width: 1700px;
+    margin: auto;
+}
+.footerNav {
+    display: flex;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.footerNav-content {
+    display: flex;
+    margin: 40px;
+    border: 1px solid white;
+    padding: 20px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+h3.footerNav-title {
+    margin: 0;
+}
+
+ul.footerNav-list {
+    list-style: none;
+    padding: 0;
+    column-count: 2;
+    column-gap: 40px;
+}
+
+ul.social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.fa-instagram:hover {
+    color: red;
+}
+.fa-soundcloud:hover {
+    color: red;
+}
+.fa-youtube-square:hover {
+    color: red;
+}
+.fa-facebook-square:hover {
+    color: red;
+}
+.fa-twitter-square:hover {
+    color: red;
+}
+
+li.social-item {
+    padding: 20px;
+}
+
+.footerNav-content-2 {
+    margin-left: 60px;
+}

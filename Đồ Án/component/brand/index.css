@@ -1,0 +1,53 @@
+a {
+    text-decoration: none;
+    height: 100%;
+    color: white;
+    display: contents;
+}
+.brand {
+    max-width: 1700px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.brand_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brand_slogan {
+    width: 50%;
+}
+img.brandbanner {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+img.brand_item {
+    width: 10%;
+}
+.brand_logo_item {
+    padding: 0 20px;
+    display: flex;
+}
+
+.brand_logo_item a {
+    padding: 0 40px;
+    display: block;
+}
+.brand_logo_item img {
+    width: 100%;
+}
+.carousel-item.active {
+    width: 100%;
+    display: flex;
+}
+.carousel-item.active img {
+    width: 100%;
+    padding: 0 40px;
+}
+/* .carousel-control-next, .carousel-control-prev {
+    width: 2%;
+} */
