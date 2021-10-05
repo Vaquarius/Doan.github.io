@@ -1,63 +1,58 @@
-.news {
-    padding: 40px 0;
+.new {
     max-width: 1700px;
-    margin: 0 40px;
+    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    padding: 0 40px;
 }
-.news a {
+.new a {
     color: black;
 }
-.new_content {
-    position: relative;
-    width: 1100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
+div#new_content {
+    margin-top: 40px;
 }
-div#newslist {
-    display: flex;
-}
+
 .newcard {
     position: relative;
-    max-width: 300px;
-    height: 215px;
     background: #fff;
-    margin: 30px 10px;
-    padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
     transition: 0.3s ease-in-out;
+    border-radius: 20px;
+    align-items: center;
+    padding: 20px;
 }
-.newcard:hover{
-    height: 440px;
-}
+
 .cardimg {
     position: relative;
     width: 100%;
-    top: -60px;
-    left: 5px;
+    top: -40px;
     z-index: 1;
     box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 .cardimg img {
     max-width: 100%;
-    border-radius: 4px;
-    
+    border-radius: 20px;
 }
 .content_new{
     position: relative;
     margin-top: -140px;
-    padding: 10px 15px;
     text-align: center;
     color: #111;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
+}
+.content_new p {
+    font-size: 1vw;
+}
+.content_new h5 {
+    font-size: 1.5vw;
 }
 .newcard:hover .content_new {
     visibility: visible;

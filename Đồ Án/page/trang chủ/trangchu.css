@@ -14,7 +14,7 @@
 }
 /* ...............................................banner............................................... */
 .banner {
-    max-width: 1440px;
+    max-width: 1700px;
     margin: auto;
     position: relative;
 }
@@ -24,7 +24,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+}
+.bannerimg {
+    background-image: url(../../IMG/DJM-S7-hero-carousel-1440x600.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
 }
 .background-banner img {
     width: 100%;
@@ -33,7 +41,7 @@
 .banner_content {
     position: absolute;
     color: white;
-    width: 50%;
+    width: 32vw;
     left: 15%;
     top: 60px;
     background: #e8e5e547;
@@ -42,11 +50,24 @@
     z-index: 9;
     padding: 10px;
 }
+/* @media (min-width: 768px){
+    .banner_content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        max-width: 768px;
+    }
+} */
+
+
 .banner_content h1, h2 {
-    font-size: 22px;
+    font-size: 2vw;
 }
 .banner_content p {
-    font-size: 14px;
+    font-size: 1vw;
 }
 .banner-btn {
     position: relative;
@@ -132,10 +153,10 @@
     transition-delay: 0.05s;
 }
 .supbanner {
-    position: absolute;
-    width: 70%;
+    max-width: 1140px;
+    margin: auto;
     background-color: #f0f0f066;
-    bottom: -50px;
+    transform: translate(0, -85px);
     display: flex;
     border-radius: 20px;
     backdrop-filter: blur(5px);
@@ -153,7 +174,7 @@
 /* ..........................................................Content................................................ */
 
 .main-content {
-    max-width: 1440px;
+    max-width: 1700px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -164,6 +185,9 @@
 .slogan {
     margin: 20px 0;
     text-align: center;
+}
+.slogan img {
+    width: 60%;
 }
 .container {
     max-width: 1700px;
@@ -266,7 +290,7 @@
 }
 .firmware_update p, h4 {
     color: black;
-    font-size: 16px;
+    font-size: 2vw;
 }
 i.fas.fa-download {
     font-size: 24px;
@@ -330,7 +354,7 @@ i.far.fa-comment-alt-lines {
 .bookshow {
     width: 100%;
     padding: 0 45px;
-    max-width: 1440px;
+    max-width: 1700px;
     margin: auto;
 }
 div#tickets {
@@ -338,6 +362,7 @@ div#tickets {
     background-color: #e6e2d9;
     margin-bottom: 50px;
 }
+
 div#ticketcard {
     background-color: #e6e2d9;
     border-radius: 20px;
@@ -410,71 +435,5 @@ div#ticketcard {
 
                                                         /* news */
 
-.news {
-    max-width: 1700px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 40px;
-}
-.news a {
-    color: black;
-}
-.new_content {
-    position: relative;
-    display: flex;
-    padding: 40px 0;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-div#newlist {
-    justify-content: space-between;
-}
-.newcard {
-    position: relative;
-    width: 20%;
-    height: 215px;
-    background: #fff;
-    margin: 30px 15px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
-    transition: 0.3s ease-in-out;
-    border-radius: 20px;
-    align-items: center;
-}
-.newcard:hover{
-    height: 440px;
-}
-.cardimg {
-    position: relative;
-    width: 100%;
-    top: -60px;
-    z-index: 1;
-    box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
-    border-radius: 20px;
-}
-.cardimg img {
-    max-width: 100%;
-    border-radius: 20px;
-}
-.content_new{
-    position: relative;
-    margin-top: -140px;
-    text-align: center;
-    color: #111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-.newcard:hover .content_new {
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
-}
+
 

@@ -1,44 +1,39 @@
-// let subnew = $('#news')
+let subnew = $('#new')
 
-// subnew.append(`
-// <div class="news">
-//     <h2>Tin Tức</h2>
-//     <div class="new_content">
-//         <div class="newcard">
-//             <div class="cardimg"><img src="../../IMG/15_1000x750.jpg" alt=""></div>
-//             <div class="content_new">
-//                 <p class="times">time</p>
-//                 <h5>Professional DJ software with high-quality sound and fast response</h5>
-//                 <p>With high-quality audio processing equivalent to that of our flagship CDJs/DJMs...</p>
-//                 <a href="#">Read More</a>
-//             </div>
-//         </div>
-//     </div>
-// </div>
-// `)
-let list_item = $("#newslist");
+subnew.append(`
+    <div class="new">
+        <h2>Tin Tức</h2>
+        
+        <div id="new_content" class="container" style="background-color: white; margin-bottom: 50px;">
+            <div id="newlist" class="row">
+            </div>
+        </div>
+            
+    </div>
+`)
+let list_item = $("#newlist");
 
 let list_Product = [
   {
-    img: "../../IMG/DenonDJ-img-SC5000MTopIntro.jpg",
+    img: "../../IMG/15_1000x750.jpg",
     title: "Denon san pham moi ko sale off",
     des: "Professional Motorized Dual-layer DJ Media Player with 7” Touchscreen",
     
   },
   {
-    img: "../../IMG/DenonDJ-img-SC5000MTopIntro.jpg",
+    img: "../../IMG/15_1000x750.jpg",
     title: "Numark 99% co sale off DJ Player",
     des: "Professional Motorized Dual-layer DJ Media Player with 7” Touchscreen",
     
   },
   {
-    img: "../../IMG/DenonDJ-img-SC5000MTopIntro.jpg",
+    img: "../../IMG/15_1000x750.jpg",
     title: "Numark 99% co sale off DJ Player",
     des: "Professional Motorized Dual-layer DJ Media Player with 7” Touchscreen",
     
   },
   {
-    img: "../../IMG/DenonDJ-img-SC5000MTopIntro.jpg",
+    img: "../../IMG/15_1000x750.jpg",
     title: "Numark 99% co sale off DJ Player",
     des: "Professional Motorized Dual-layer DJ Media Player with 7” Touchscreen",
     
@@ -59,22 +54,31 @@ const renderList = (list) => {
   let str = "";
   list.forEach((item) => {
     str += `
-    <div class="newcard">
-      <a href="">
-          <div class="cardimg"><img src="${item.img}" alt=""></div>
-          <div class="content_new">
-              <p class="times">time</p>
-              <h5>${item.title}</h5>
-              <p>${item.des}</p>
-              <a href="#">Read More</a>
-          </div>
-      </a>
-    </div>
-    
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="newcard">
+            <div class="cardimg"><img src="${item.img}" alt=""></div>
+            <div class="content_new">
+                <p class="times">time</p>
+                <h5>${item.title}</h5>
+                <p>${item.des}</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>  
+      </div>  
         `;
     list_item.append(str);
   });
-  
+  // <div class="newcard">
+  //     <a href="">
+  //         <div class="cardimg"><img src="${item.img}" alt=""></div>
+  //         <div class="content_new">
+  //             <p class="times">time</p>
+  //             <h5>${item.title}</h5>
+  //             <p>${item.des}</p>
+  //             <a href="#">Read More</a>
+  //         </div>
+  //     </a>
+  //   </div>
   return str;
 };
 

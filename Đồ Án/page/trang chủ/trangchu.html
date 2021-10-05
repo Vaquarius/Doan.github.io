@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../../component/header/index.css">
+    <link rel="stylesheet" href="../../component/News/index.css">
     
     <link rel="stylesheet" href="../../component/brand/index.css">
     <link rel="stylesheet" href="../../component/footer/index.css">
@@ -23,24 +24,28 @@
     
     <div class="banner">
         <div class="background-banner">
-            <div class="bannerimg">
-                <img src="../../IMG/DJM-S7-hero-carousel-1440x600.jpg" alt="">
-            </div>
+            <span class="bannerimg">
+                <!-- <img src="../../IMG/DJM-S7-hero-carousel-1440x600.jpg" alt=""> -->
+            </span>
             
             <div class="banner_content">
                 <h1>DJM-S7</h1>
                 <h2>Turntable</h2>
                 <p>This new 2-channel battle mixer gives you the freedom to customize your setup and bring your own unique style to every performance.</p>
-                <div class="banner-btn"><a href="">Buy Now</a> </div>
+                <div class="banner-btn"><a href="">Buy Now</a></div>
+                
                 
             </div>
             
-            <div class="supbanner">
-                <div class="supbanner_item"><img src="../../IMG/DJM-S7-hero-carousel-1440x600.jpg" alt=""></div>
-                <div class="supbanner_item"><img src="../../IMG/CDJ-3000-carousel-desktop-1440x600.jpg" alt=""></div>
-                <div class="supbanner_item"><img src="../../IMG/vm speaker carousel 1440x600.jpg" alt=""></div> 
-            </div>
+            
         </div>
+        
+        <div class="supbanner">
+            <div class="supbanner_item"><img src="../../IMG/DJM-S7-hero-carousel-1440x600.jpg" alt=""></div>
+            <div class="supbanner_item"><img src="../../IMG/CDJ-3000-carousel-desktop-1440x600.jpg" alt=""></div>
+            <div class="supbanner_item"><img src="../../IMG/vm speaker carousel 1440x600.jpg" alt=""></div> 
+        </div>
+        
         
     </div>
     <!-- .................................................main content............................................. -->
@@ -128,6 +133,7 @@
     <!-- .................................................. Book show ...................................................... -->
     <div class="bookshow">
         <div id="tickets" class="container">
+            
             <div id="ticketcard" class="row">
                 <div class="col-lg-8 col-md-12 col-sm-12 ticket-left">
                     <div class="ticketimg">
@@ -170,10 +176,22 @@
                     <div class="ticketcontent">
                         <h3>music concept 2021</h3>
                         <p>Time/date</p>
-                        <div class="artist">
-                            <span>DJ</span>
-                            <h3>artist name</h3>
+                        <p class="ticketdes">DescriptionDescript ionDescriptionDescriptionDescriptionDescript ionDescriptionDescriptionDesc riptionDescriptionDescriptionDescrip tionDesc riptionDes criptionDescriptionDescri ption</p>
+                        <div class="artistlist">
+                            <div class="artist">
+                                <h3>DJ</h3>
+                                <p>artist name</p>
+                            </div>
+                            <div class="artist">
+                                <h3>DJ</h3>
+                                <p>artist name</p>
+                            </div>
+                            <div class="artist">
+                                <h3>DJ</h3>
+                                <p>artist name</p>
+                            </div>
                         </div>
+                        <button>buy now</button>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12 col-sm-12 ticket-left">
@@ -189,57 +207,7 @@
 
     <!-- .................................................news............................................. -->
 
-    <div class="news">
-        <h2>Tin Tức</h2>
-        <div class="container" style="background-color: white; margin-bottom: 50px;">
-            <div id="newlist" class="row">
-               
-                <div class="col-lg-3 col-sm-3 newcard">
-                    <div class="cardimg"><img src="../../IMG/15_1000x750.jpg" alt=""></div>
-                    <div class="content_new">
-                        <p class="times">time</p>
-                        <h5>Professional DJ software with high-quality sound and fast response</h5>
-                        <p>With high-quality audio processing equivalent to that of our flagship CDJs/DJMs...</p>
-                        <a href="#">Read More</a>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3 col-sm-3 newcard">
-                    <div class="cardimg"><img src="../../IMG/15_1000x750.jpg" alt=""></div>
-                    <div class="content_new">
-                        <p class="times">time</p>
-                        <h5>Professional DJ software with high-quality sound and fast response</h5>
-                        <p>With high-quality audio processing equivalent to that of our flagship CDJs/DJMs...</p>
-                        <a href="#">Read More</a>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3 col-sm-3 newcard">
-                    <div class="cardimg"><img src="../../IMG/15_1000x750.jpg" alt=""></div>
-                    <div class="content_new">
-                        <p class="times">time</p>
-                        <h5>Professional DJ software with high-quality sound and fast response</h5>
-                        <p>With high-quality audio processing equivalent to that of our flagship CDJs/DJMs...</p>
-                        <a href="#">Read More</a>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3 col-sm-3 newcard">
-                    <div class="cardimg"><img src="../../IMG/15_1000x750.jpg" alt=""></div>
-                    <div class="content_new">
-                        <p class="times">time</p>
-                        <h5>Professional DJ software with high-quality sound and fast response</h5>
-                        <p>With high-quality audio processing equivalent to that of our flagship CDJs/DJMs...</p>
-                        <a href="#">Read More</a>
-                    </div>
-                    
-                </div>
-                    
-               
-            </div>  
-        </div>
-        
-    </div>
+    <div id="new"></div>
 
     <!-- .................................................brand............................................. -->
 
@@ -252,6 +220,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="../../component/header/index.js"></script>
+    <script src="../../component/News/index.js"></script>
     
     <script src="../../component/brand/index.js"></script>
     <script src="../../component/footer/index.js"></script>
