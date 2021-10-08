@@ -1,3 +1,18 @@
+div#newlist {
+    flex-flow: nowrap;
+}
+div#new_content {
+    padding: 0;
+}
+.row-cols-1>* {
+    padding: 5px;
+}
+.card-body h5 {
+    font-size: 24px !important;
+}
+.card-body p {
+    font-size: 18px !important;
+}
 .new {
     max-width: 1700px;
     margin: auto;
@@ -10,53 +25,22 @@
 .new a {
     color: black;
 }
-div#new_content {
-    margin-top: 40px;
+@media (max-width: 1024px){
+    .card-body p{
+        font-size: 16px !important;
+    }
+    .card-body h5 {
+        font-size: 20px !important;
+    }
 }
-
-.newcard {
-    position: relative;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
-    transition: 0.3s ease-in-out;
-    border-radius: 20px;
-    align-items: center;
-    padding: 20px;
-}
-
-.cardimg {
-    position: relative;
-    width: 100%;
-    top: -40px;
-    z-index: 1;
-    box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-.cardimg img {
-    max-width: 100%;
-    border-radius: 20px;
-}
-.content_new{
-    position: relative;
-    margin-top: -140px;
-    text-align: center;
-    color: #111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-.content_new p {
-    font-size: 1vw;
-}
-.content_new h5 {
-    font-size: 1.5vw;
-}
-.newcard:hover .content_new {
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
+@media (max-width: 768px){
+    .card-body p{
+        font-size: 12px !important;
+    }
+    .card-body h5 {
+        font-size: 18px !important;
+    }
+    .card-body a {
+        font-size: 12px;
+    }
 }

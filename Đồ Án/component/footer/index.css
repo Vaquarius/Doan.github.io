@@ -10,10 +10,6 @@ div#footer {
     padding: 0 40px;
     margin: auto;
 }
-div#footerNav {
-    display: flex;
-    align-items: center;
-}
 
 .footerLogo {
     display: flex;
@@ -32,21 +28,23 @@ img.footer-logo {
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.footerNav-content-1 {
-    margin-right: 40px;
+.footerNav-content-1, .footerNav-content-2 {
+    margin-right: 20px;
 }
-.footerNav-content-2 {
-    margin-right: 40px;
-}
+
 h3.footerNav-title {
     margin: 0;
 }
 
-ul.footerNav-list {
+ul.footerNav-list1 {
     list-style: none;
     padding: 0;
     column-count: 2;
-    column-gap: 30px;
+    column-gap: 20px;
+}
+ul.footerNav-list {
+    list-style: none;
+    padding: 0;
 }
 
 ul.social-list {

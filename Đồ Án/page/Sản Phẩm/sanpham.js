@@ -170,18 +170,19 @@ let filters = {
                 <img class="product_background" src="${item.img}" alt="">
                 <div class="product-card-content">
                     <h5>${item.title}</h5>
-                    <div class="product-card-color">
-                        <p>Color :</p>
-                        <span class="circle-white active" onclick="changeColor(event)"></span>
-                        <span class="circle-black" onclick="changeColor(event)"></span>
-                    </div>
-                    <div class="product-card-price">
-                        <p>${formatter.format(
-                            item.price
-                          )}</p>
-                    </div>
-                    <a class="btn-cart" href="">Add To Cart</a>
+                    
                 </div>
+                <div class="product-card-color">
+                    <p>Color :</p>
+                    <span class="circle-white active" onclick="changeColor(event)"></span>
+                    <span class="circle-black" onclick="changeColor(event)"></span>
+                </div>
+                <div class="product-card-price">
+                    <p>${formatter.format(
+                      item.price
+                    )}</p>
+                </div>
+                <button class="btn-cart">Add To Cart</button>
             </a>       
         </div>
         `;

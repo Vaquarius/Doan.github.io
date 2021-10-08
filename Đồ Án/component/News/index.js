@@ -1,4 +1,4 @@
-let subnew = $('#new')
+let subnew = $('#news')
 
 subnew.append(`
     <div class="new">
@@ -54,17 +54,20 @@ const renderList = (list) => {
   let str = "";
   list.forEach((item) => {
     str += `
-      <div class="col-lg-3 col-md-3 col-sm-3">
-        <div class="newcard">
-            <div class="cardimg"><img src="${item.img}" alt=""></div>
-            <div class="content_new">
-                <p class="times">time</p>
-                <h5>${item.title}</h5>
-                <p>${item.des}</p>
-                <a href="#">Read More</a>
-            </div>
-        </div>  
-      </div>  
+    
+    <div class="row row-cols-1 row-cols-md-12 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="${item.img}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${item.title}</h5>
+            <p class="card-text">${item.des}</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+     
         `;
     list_item.append(str);
   });
@@ -79,6 +82,17 @@ const renderList = (list) => {
   //         </div>
   //     </a>
   //   </div>
+  // <div class="col-lg-3 col-md-3 col-sm-3">
+  //       <div class="newcard">
+  //           <div class="cardimg"><img src="${item.img}" alt=""></div>
+  //           <div class="content_new">
+  //               <p class="times">time</p>
+  //               <h5>${item.title}</h5>
+  //               <p>${item.des}</p>
+  //               <a href="#">Read More</a>
+  //           </div>
+  //       </div>  
+  //     </div> 
   return str;
 };
 

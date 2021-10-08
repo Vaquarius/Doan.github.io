@@ -22,7 +22,7 @@
     <div class="allproduct">
         <div id="" class="container-fluid">
             <div class="row">
-                <div class="col-lg-2 col-sm-12 filter">
+                <div class="col-lg-3 col-sm-12 filter">
                     
                     <div class="productstatus">
                         <p class="Produc-menu">Danh Mục Sản Phẩm</p>
@@ -111,96 +111,108 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-10 col-sm-12 productlist">
+                <div class="col-lg-9 col-sm-12 productlist">
                     
                     <div class="product-submenu">
+                        
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Danh Mục Sản Phẩm
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            <img src="../../IMG/filter-1324438826391415094_32.png" alt="">
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Danh Mục Sản Phẩm</button>
+                                <div class="collapse" id="multiCollapseExample1">
+                                    <div class="card card-body test">
+                                        <a class="dropdown-item" href="#">DJ Equipments</a>
+                                        <a class="dropdown-item" href="#">Studio Gears</a>
+                                        <a class="dropdown-item" href="#">HeadPhones</a>
+                                        <a class="dropdown-item" href="#">Audio Speakers</a>
+                                        <a class="dropdown-item" href="#">Accessories</a>
+                                        <a class="dropdown-item" href="#">Sale Off</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Price Ranger</button>
+                                <div class="collapse" id="multiCollapseExample2">
+                                    <div class="card card-body test">
+                                        <div class="price">
+                                            <div class="price_item">
+                                                <input class="price_input" onchange="filterByPrice(this)" type="checkbox" id="price1" name="price" value="1">
+                                                <label for="price1">Dưới 10.000.000đ</label><br>
+                                            </div>
+                                            <div class="price_item">
+                                                <input class="price_input" onchange="filterByPrice(this)" type="checkbox" id="price2" name="price" value="2">
+                                                <label for="price2">Từ 10.000.000đ - 20.000.000đ</label><br>
+                                            </div>
+                                            <div class="price_item">
+                                                <input class="price_input" onchange="filterByPrice(this)" type="checkbox" id="price3" name="price" value="3">
+                                                <label for="price3">Từ 20.000.000đ - 50.000.000đ</label><br>
+                                            </div>
+                                            <div class="price_item">
+                                                <input class="price_input" onchange="filterByPrice(this)" type="checkbox" id="price4" name="price" value="4">
+                                                <label for="price4">Trên 50.000.000đ</label>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Sản Phẩm</button>
+                                </button>
+                                <div class="collapse" id="multiCollapseExample3">
+                                    <div class="card card-body test">
+                                        <div class="price">
+                                            <div onclick="filterByNew(1)" class="price_item">
+                                                <input type="checkbox">
+                                                <p>Sản phẩm mới</p>
+                                            </div>
+                                            <div onclick="filterByNew(2)" class="price_item">
+                                                <input type="checkbox">
+                                                <p>Đang giảm giá</p>
+                                            </div>
+                                            <div onclick="filterByNew(3)" class="price_item">
+                                                <input type="checkbox">
+                                                <p>Sản phẩm 99%</p>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Hãng</button>
+                                </button>
+                                <div class="collapse" id="multiCollapseExample4">
+                                    <div class="card card-body test">
+                                        <div class="price">
+                                            <div class="price_item">
+                                                <input onchange="filterByBrandNew(this)" type="checkbox" id="band1" name="brand" value="1">
+                                                <label for="band1">Denon</label><br>
+                                            </div>
+                                            <div class="price_item">
+                                                <input onchange="filterByBrandNew(this)" type="checkbox" id="band2" name="brand" value="2">
+                                                <label for="band2">Pioneer</label><br>
+                                            </div>
+                                            <div class="price_item">
+                                                <input onchange="filterByBrandNew(this)" type="checkbox" id="band3" name="brand" value="3">
+                                                <label for="band3">Numark</label><br>
+                                            </div>
+                                            <div class="price_item">
+                                                <input onchange="filterByBrandNew(this)" type="checkbox" id="band4" name="brand" value="4">
+                                                <label for="band4">Akai</label>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                             </ul>
                         </div>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Filter
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><div class="price">
-                            
-                                <div class="ranger">
-                                    <p class="namefilter">Price Ranger</p>
-                                    <i class="fas fa-caret-up"></i>
-                                </div>
-                
-                                <div class="price_item">
-                                    <input class="price_input" onchange="filterByPrice(this)" type="checkbox" id="price1" name="price" value="1">
-                                    <label for="price1">Dưới 10.000.000đ</label><br>
-                                </div>
-                                <div class="price_item">
-                                    <input class="price_input" onchange="filterByPrice(this)" type="checkbox" id="price2" name="price" value="2">
-                                    <label for="price2">Từ 10.000.000đ - 20.000.000đ</label><br>
-                                </div>
-                                <div class="price_item">
-                                    <input class="price_input" onchange="filterByPrice(this)" type="checkbox" id="price3" name="price" value="3">
-                                    <label for="price3">Từ 20.000.000đ - 50.000.000đ</label><br>
-                                </div>
-                                <div class="price_item">
-                                    <input class="price_input" onchange="filterByPrice(this)" type="checkbox" id="price4" name="price" value="4">
-                                    <label for="price4">Trên 50.000.000đ</label>
-                                </div>
-                                
-                            </div></li>
-                            <li><div class="price">
-                                <div class="ranger">
-                                    <p class="namefilter">Sản Phẩm</p>
-                                    <i class="fas fa-caret-up"></i>
-                                </div>
-                                
-                                <div onclick="filterByNew(1)" class="price_item">
-                                    <input type="checkbox">
-                                    <p>Sản phẩm mới</p>
-                                </div>
-                                <div onclick="filterByNew(2)" class="price_item">
-                                    <input type="checkbox">
-                                    <p>Đang giảm giá</p>
-                                </div>
-                                <div onclick="filterByNew(3)" class="price_item">
-                                    <input type="checkbox">
-                                    <p>Sản phẩm 99%</p>
-                                </div>
-                                
-                                
-                            </div></li>
-                            <li><div class="price">
-                                <div class="ranger">
-                                    <p class="namefilter">Hãng</p>
-                                    <i class="fas fa-caret-up fa-lg"></i>
-                                </div>
-                                
-                                <div class="price_item">
-                                    <input onchange="filterByBrandNew(this)" type="checkbox" id="band1" name="brand" value="1">
-                                    <label for="band1">Denon</label><br>
-                                </div>
-                                <div class="price_item">
-                                    <input onchange="filterByBrandNew(this)" type="checkbox" id="band2" name="brand" value="2">
-                                    <label for="band2">Pioneer</label><br>
-                                </div>
-                                <div class="price_item">
-                                    <input onchange="filterByBrandNew(this)" type="checkbox" id="band3" name="brand" value="3">
-                                    <label for="band3">Numark</label><br>
-                                </div>
-                                <div class="price_item">
-                                    <input onchange="filterByBrandNew(this)" type="checkbox" id="band4" name="brand" value="4">
-                                    <label for="band4">Akai</label>
-                                </div>
-                                
-                            </div></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                     
                     <div id="productlist_item" class="productlist_item"></div>

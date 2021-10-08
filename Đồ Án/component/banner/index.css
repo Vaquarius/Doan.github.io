@@ -16,6 +16,7 @@ div#banner {
     max-height: 500px;
     /* flex: 2; */
     width: 100%;
+    z-index: -1;
 }
 
 .banner-right {
@@ -80,4 +81,8 @@ button.carousel-control-prev, button.carousel-control-next {
     background-size: 28px;
     transform: rotateY(180deg);
 }
-
+@media (max-width: 576px) {
+    div#banner {
+        display: none;
+    }
+}
