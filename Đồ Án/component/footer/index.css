@@ -1,21 +1,18 @@
 
-div#footer {
-    background: black;
-    width: 100%;
-}
+
 .footer {
     background-color: black;
     color: white;
     max-width: 1700px;
-    padding: 0 40px;
+    padding: 40px;
     margin: auto;
 }
 
 .footerLogo {
     display: flex;
     align-items: center;
-    padding: 10px 10px;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0;
 }
 img.footer-logo {
     max-width: 100%;
@@ -73,3 +70,9 @@ ul.social-list {
 li.social-item {
     padding: 20px;
 }
+@media (max-width: 768px) {
+    .footerLogo {
+        justify-content: center;
+    }
+}
+

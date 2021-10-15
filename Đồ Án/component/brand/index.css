@@ -9,8 +9,11 @@ a {
     margin: auto;
     background-color: black;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .brand_logo {
     display: flex;
@@ -18,36 +21,27 @@ a {
     align-items: center;
 }
 .brand_slogan {
-    width: 50%;
+    width: 100%;
 }
 img.brandbanner {
     width: 100%;
     margin-bottom: 10px;
 }
 
-img.brand_item {
+img.slogan-logo {
     width: 10%;
 }
-.brand_logo_item {
-    padding: 0 20px;
+
+.brand-logo-list {
     display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+}
+.logo-row.row {
+    justify-content: center;
 }
 
-.brand_logo_item a {
-    padding: 0 40px;
-    display: block;
-}
-.brand_logo_item img {
+.brand_item img {
     width: 100%;
 }
-.carousel-item.active {
-    width: 100%;
-    display: flex;
-}
-.carousel-item.active img {
-    width: 100%;
-    padding: 0 40px;
-}
-/* .carousel-control-next, .carousel-control-prev {
-    width: 2%;
-} */

@@ -38,7 +38,7 @@ header.append(`
             </ul>
             <div class="cart" >
                 <a href="" title="Cart">
-                    <i class="fab fa-opencart fa-lg"></i>
+                    <i class="fas fa-shopping-cart fa-lg"></i>
                     <span class="cart__batch">2</span>
                 </a>
             </div>

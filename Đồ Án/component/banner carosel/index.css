@@ -1,14 +1,24 @@
+.banner {
+    max-width: 1700px;
+    margin: auto;
+}
+.container-fluid {
+    padding: 0;
+}
 .producimageslide.row {
     justify-content: center;
 }
+.col-12.producimages {
+    padding: 0;
+}
 .col-12.producimages img {
-    /* position: relative; */
     width: 100%;
+    
 }
 .col-8.small-images {
     display: flex;
     position: static;
-    transform: translate(0px, -5vw);
+    transform: translate(0px, -3vw);
 }
 .small-image {
     width: 100%;
@@ -44,22 +54,23 @@
 }
 .overlay h1, h2 {
     margin-bottom: 10px;
-    font-size: 48px;
+    font-size: 44px;
 }
 .description {
-display: block;
-margin-bottom: 20px;
-font-size: 32px;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 28px;
 }
 
 button.bannerbtn {
-    font-size: 48px;
-    width: 260px;
+    max-width: 260px;
+    padding: 0 40px;
     text-align: center;
     color: white;
     background: #212529c4;
     text-decoration: none;
     border-radius: 40px;
+    font-size: 32px;
 }
 button.bannerbtn:hover {
     background: black;
@@ -76,7 +87,10 @@ button.bannerbtn:hover {
     }
     button.bannerbtn {
         font-size: 24px;
-        width: 160px;
+        width: 170px;
+    }
+    .col-8.small-images {
+        transform: translate(0px, -5vw);
     }
 }
 @media (max-width: 1024px){
@@ -91,7 +105,7 @@ button.bannerbtn:hover {
     }
     button.bannerbtn {
         font-size: 20px;
-        width: 120px;
+        width: 160px;
     }
 }
 @media (max-width: 768px){

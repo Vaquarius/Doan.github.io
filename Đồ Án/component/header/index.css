@@ -17,7 +17,7 @@ a {
     width: 100%;
 }
 .cart {
-    margin: 0 15px;
+    margin: 0 20px;
     height: 30px;
     display: flex;
     position: relative;
@@ -35,9 +35,10 @@ span.cart__batch {
 
 input.form-control.me-2 {
     border-radius: 20px;
+    padding: 0.200rem .75rem;
 }
 button.btn.btn-outline-success {
-    width: 20%;
+    width: 15%;
     background: #fff;
     border-radius: 60px;
     transition: 0.5s;
